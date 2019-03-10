@@ -1,0 +1,23 @@
+server:
+  port: 7070
+  servlet:
+    context-path: /management/v1
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+
+keycloak:
+
+  realm: keycloak-realm
+  auth-server-url: http://localhost:8180/auth
+  # The client_id
+  resource: keycloak-example
+  public-client: true
+  # Configures what principal.getName() will return
+  principal-attribute: preferred_username
+ 
+  
+
+    
