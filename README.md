@@ -19,8 +19,6 @@ First Keycloak and the database needs to be started via:
 docker-compose -f keycloak/docker-compose.yml up
 ```
 
-It imports a demo realm with an example user and sets the admin credentials to `admin:password`. You can visit the administration console at [http://localhost:8180/auth/](http://localhost:8180/auth/).
-
 Use that URL in your browser to access the administration console of Keycloak.
 It is located at `http://localhost:8180/auth`. Connect using the Keycloak default administration user
 `admin/admin` [if it's the first time you login. Keycloak requires changing this password at first login. Since I mentioned it in docker-compose file this can be skipped]
